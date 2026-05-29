@@ -1,6 +1,6 @@
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useRef } from 'react'
-import { personal, dualRole } from '../data/content'
+import { personal } from '../data/content'
 import { ArrowDownRight } from 'lucide-react'
 
 export default function Hero() {
@@ -56,9 +56,9 @@ export default function Hero() {
           </div>
           <div className="overflow-hidden">
             <motion.div variants={wordVariants} className="flex items-baseline gap-4 md:gap-6 flex-wrap">
-              <span className="text-accent italic font-normal">{dualRole.left.label}</span>
+              <span className="text-accent italic font-normal">fullstack</span>
               <span className="text-ink/40 text-3xl md:text-5xl">+</span>
-              <span className="font-mono not-italic text-[0.75em]">{dualRole.right.label}</span>
+              <span className="font-mono not-italic text-[0.75em]">{ '{ ai }' }</span>
             </motion.div>
           </div>
           <div className="overflow-hidden">

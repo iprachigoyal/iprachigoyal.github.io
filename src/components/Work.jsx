@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { ArrowUpRight, Github } from 'lucide-react'
+import { ArrowUpRight } from 'lucide-react'
 import { projects } from '../data/content'
 import { FadeUp, SectionHeader } from './Motion'
 
@@ -58,14 +58,6 @@ export default function Work() {
                       className="px-4 py-2 bg-bone text-ink rounded-full font-mono text-xs uppercase tracking-wider flex items-center gap-2 hover:bg-accent hover:text-bone transition-colors"
                     >
                       Live <ArrowUpRight className="w-3 h-3" />
-                    </a>
-                    <a
-                      href={p.code}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="px-4 py-2 bg-bone text-ink rounded-full font-mono text-xs uppercase tracking-wider flex items-center gap-2 hover:bg-accent hover:text-bone transition-colors"
-                    >
-                      Code <Github className="w-3 h-3" />
                     </a>
                   </div>
                 </div>

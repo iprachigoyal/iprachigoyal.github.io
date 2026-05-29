@@ -9,7 +9,7 @@ export default function Services() {
         <SectionHeader
           eyebrow="04 / Services"
           title="How I can help."
-          description="Available for client projects, contract roles, and the occasional 'can you just look at this?' favor. Half-day discovery calls are free."
+          description="Available for client projects, contract roles, and the occasional 'can you just look at this?' favor."
         />
 
         <Stagger className="grid grid-cols-1 md:grid-cols-2 gap-px bg-bone/10">

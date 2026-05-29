@@ -7,8 +7,8 @@ export default function About() {
       <div className="max-w-7xl mx-auto">
         <SectionHeader
           eyebrow="01 / About"
-          title="Part frontend. Part backend. All builder."
-          description={`I'm ${personal.name}, a full-stack developer based in ${personal.location}. I've spent the last few years shipping products end-to-end — design, code, deploy, support — and I genuinely enjoy every layer of the stack.`}
+          title="Part fullstack. Part AI. All builder."
+          description={`I'm ${personal.name}, a full-stack developer based in ${personal.location}. I've spent the last few years shipping products end-to-end, design, code, deploy, support and I genuinely enjoy every layer of the stack.`}
         />
 
         {/* Split-personality block — Adham's signature move */}
