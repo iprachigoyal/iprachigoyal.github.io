@@ -9,7 +9,7 @@ export const personal = {
   location: 'India',
   email: 'goyalprachi711@gmail.com',
   tagline:
-    'Full-stack developer who ships products end to end - APIs, data models, and interfaces that feel clear in daily use. Recent work spans property-management platforms, multi-tenant SaaS, and production tools running in the real world.',
+    'Full-stack developer who builds products end to end. I design APIs, data models, and interfaces that stay clear in daily use. Recent work includes property-management platforms, multi-tenant SaaS, and production tools running in the real world.',
   // The banner you uploaded — already styled as a portfolio header
   banner: '/banner.png',
   available: true,
@@ -72,7 +72,9 @@ export const experience = [
       'Building features for the Edge platform at a property management company, automating rental operations and internal workflows. Implemented CASL-based RBAC across all modules, integrated AppFolio APIs for real-time property/tenant/owner sync, and built communication infra with SendGrid and the Gmail API for two-way email sync.',
     tags: ['React', 'TypeScript', 'CASL / RBAC', 'AppFolio', 'SendGrid', 'Gmail API'],
   },
+
   
+
   {
     company: 'Ultivic Pvt. Ltd',
     role: 'Jr. React Developer',
@@ -81,6 +83,15 @@ export const experience = [
     description:
       'Developed 20+ reusable and scalable UI components with React and Redux Toolkit, tailored to diverse client requirements. Ensured responsive design and optimized performance across devices and browsers.',
     tags: ['React', 'Redux Toolkit', 'Responsive UI'],
+  },
+  {
+    company: 'Freelance',
+    role: 'Web Developer',
+    period: '2024 — Present',
+    type: 'Self-Employed',
+    description:
+      'Building the frontend of websites and web apps using modern technologies. Working directly with clients to design and develop user interfaces that meet their business needs.',
+    tags: ['React', 'Next.js', 'Tailwind', 'UI/UX'],
   },
   {
     company: 'Quark Software Inc',
