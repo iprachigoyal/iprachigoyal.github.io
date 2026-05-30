@@ -28,7 +28,7 @@ export default function Contact() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
           <FadeUp delay={0.2} className="md:col-span-7">
             <p className="text-lg text-bone/70 leading-relaxed max-w-md">
-              Best way to reach me is email — I read every one and reply within
+              Best way to reach me is through email. I read every one and reply within
               24 hours. Cold outreach welcome.
             </p>
           </FadeUp>
