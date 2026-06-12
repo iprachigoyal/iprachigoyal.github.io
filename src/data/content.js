@@ -17,8 +17,8 @@ export const personal = {
 }
 
 export const socials = [
-  { label: 'GitHub', url: 'https://github.com/prachigoyal' },
-  { label: 'LinkedIn', url: 'https://linkedin.com/in/prachigoyal' },
+  { label: 'GitHub', url: 'https://github.com/iprachigoyal' },
+  { label: 'LinkedIn', url: 'https://www.linkedin.com/in/prachi-goyal19/' },
   { label: 'Email', url: 'mailto:goyalprachi711@gmail.com' },
 ]
 
