@@ -137,7 +137,7 @@ export const projects = [
   {
     title: 'Talksy',
     blurb:
-      'WhatsApp-style messaging for web and mobile — a full-stack monorepo with real-time 1:1 and group chat over Socket.IO, delivery receipts, presence, emoji reactions, media uploads, replies, and message edit/delete. Built as a learn-as-you-go project with shared TypeScript contracts across Express, React, and React Native (Expo).',
+      'A real-time chat app for web and mobile. One-on-one and group conversations update instantly over Socket.IO, with the touches that make messaging feel alive — delivery receipts, online presence, reactions, replies, media sharing, and editing or deleting what you have sent. I built it to learn how a messaging stack fits together, sharing TypeScript contracts across an Express backend, a React web client, and a React Native (Expo) app.',
     tags: ['React', 'Socket.IO', 'TypeScript', 'Prisma', 'PostgreSQL', 'TanStack Query'],
     image: '/project-talksy-placeholder.jpg',
     live: 'https://talksy-web-eight.vercel.app/',
