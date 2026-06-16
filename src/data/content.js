@@ -134,6 +134,16 @@ export const projects = [
     year: '2024',
     featured: true,
   },
+  {
+    title: 'Talksy',
+    blurb:
+      'WhatsApp-style messaging for web and mobile — a full-stack monorepo with real-time 1:1 and group chat over Socket.IO, delivery receipts, presence, emoji reactions, media uploads, replies, and message edit/delete. Built as a learn-as-you-go project with shared TypeScript contracts across Express, React, and React Native (Expo).',
+    tags: ['React', 'Socket.IO', 'TypeScript', 'Prisma', 'PostgreSQL', 'TanStack Query'],
+    image: '/project-talksy-placeholder.jpg',
+    live: 'https://talksy-web-eight.vercel.app/',
+    year: '2025',
+    featured: true,
+  },
 ]
 
 export const testimonials = [

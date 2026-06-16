@@ -1,4 +1,6 @@
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { useState } from 'react'
+import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion'
+import { Menu, X } from 'lucide-react'
 import { personal } from '../data/content'
 
 const nav = [
@@ -12,6 +14,7 @@ export default function Nav() {
   const { scrollY } = useScroll()
   const pad = useTransform(scrollY, [0, 200], ['1.25rem', '0.75rem'])
   const bgOpacity = useTransform(scrollY, [0, 200], [0, 0.85])
+  const [open, setOpen] = useState(false)
 
   return (
     <motion.header
@@ -26,11 +29,16 @@ export default function Nav() {
         className="absolute inset-0 bg-bone/80 backdrop-blur-md border-b border-ink/5"
       />
       <div className="relative max-w-7xl mx-auto flex items-center justify-between">
-        <a href="#top" className="flex items-center gap-2 group">
-          <div className="w-8 h-8 bg-ink text-bone font-display text-sm flex items-center justify-center rounded-full">
+        <a href="#top" className="flex items-center gap-3 group">
+          <div className="w-8 h-8 bg-ink text-bone font-display text-sm flex items-center justify-center rounded-full shrink-0">
             {personal.shortName}
           </div>
-          <span className="font-mono text-sm hidden sm:inline">{personal.name}</span>
+          <span className="flex flex-col leading-tight md:flex-row md:items-center md:gap-2">
+            <span className="font-mono text-sm">{personal.name}</span>
+            <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-ink/50 md:hidden">
+              {personal.role}
+            </span>
+          </span>
         </a>
         <nav className="hidden md:flex items-center gap-8">
           {nav.map((item) => (
@@ -50,7 +58,53 @@ export default function Nav() {
           <span className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse" />
           Available
         </a>
+        <div className="md:hidden flex items-center gap-3">
+          <span className="inline-flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-[0.15em] text-ink/50">
+            <span className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse" />
+            Available
+          </span>
+          <button
+            type="button"
+            onClick={() => setOpen((v) => !v)}
+            aria-label={open ? 'Close menu' : 'Open menu'}
+            aria-expanded={open}
+            className="inline-flex items-center justify-center w-10 h-10 -mr-2 text-ink"
+          >
+            {open ? <X size={22} /> : <Menu size={22} />}
+          </button>
+        </div>
       </div>
+
+      <AnimatePresence>
+        {open && (
+          <motion.nav
+            initial={{ opacity: 0, y: -8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+            transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
+            className="md:hidden relative mt-4 flex flex-col gap-1 bg-bone/95 backdrop-blur-md border border-ink/5 rounded-2xl p-3 shadow-lg"
+          >
+            {nav.map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                onClick={() => setOpen(false)}
+                className="font-mono text-xs uppercase tracking-[0.15em] px-3 py-3 rounded-lg hover:bg-ink/5 transition-colors"
+              >
+                {item.label}
+              </a>
+            ))}
+            <a
+              href="#contact"
+              onClick={() => setOpen(false)}
+              className="mt-1 inline-flex items-center gap-2 px-4 py-3 bg-ink text-bone rounded-xl font-mono text-xs uppercase tracking-[0.15em] hover:bg-accent transition-colors"
+            >
+              <span className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse" />
+              Available
+            </a>
+          </motion.nav>
+        )}
+      </AnimatePresence>
     </motion.header>
   )
 }
