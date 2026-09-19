@@ -12,7 +12,7 @@ export default function Contact() {
       <div className="max-w-7xl mx-auto">
         <FadeUp>
           <div className="font-mono text-xs uppercase tracking-[0.2em] text-bone/50 mb-6">
-            06 / Contact — Currently Available
+            06 / Contact · Currently Available
           </div>
         </FadeUp>
 
@@ -47,7 +47,7 @@ export default function Contact() {
 
         <div className="mt-24 pt-8 border-t border-bone/10 flex flex-wrap items-center justify-between gap-6">
           <div className="font-mono text-xs uppercase tracking-[0.2em] text-bone/50">
-            © 2026 {personal.name} — Built with care
+            © 2026 {personal.name} · Built with care
           </div>
           <div className="flex flex-wrap gap-x-6 gap-y-2">
             {socials.map((s) => (

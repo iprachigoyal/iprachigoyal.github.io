@@ -1,7 +1,7 @@
-# Your Portfolio — Setup Guide
+# Your Portfolio: Setup Guide
 
 A full-stack developer portfolio built with **React + Vite + Tailwind CSS + Framer Motion**.
-Minimal Adham-style hero, Ram-style depth below — dark accents, custom cursor, smooth scroll animations.
+Minimal Adham-style hero, Ram-style depth below: dark accents, custom cursor, smooth scroll animations.
 
 ---
 
@@ -24,12 +24,12 @@ That file contains your name, role, bio, stats, skills, experience, projects,
 services, testimonials, brands, and socials. Update it and the entire site
 reflects your info.
 
-Everything else is in `src/components/` — only touch those if you want to change
+Everything else is in `src/components/`. Only touch those if you want to change
 layout or design.
 
 ---
 
-## ✅ Content checklist — what to send / prepare
+## ✅ Content checklist: what to send / prepare
 
 Drop these in `public/` and update the paths in `src/data/content.js`:
 
@@ -53,9 +53,9 @@ Drop these in `public/` and update the paths in `src/data/content.js`:
 ### 4. Text content to gather
 - [ ] Your real name, location, email
 - [ ] Tagline (one sentence about what you do)
-- [ ] Bio paragraph (2–3 sentences)
+- [ ] Bio paragraph (2 to 3 sentences)
 - [ ] 3 stats (projects shipped, years coding, happy clients, etc.)
-- [ ] Skills list (already populated — edit as needed)
+- [ ] Skills list (already populated, edit as needed)
 - [ ] Work experience (company, role, period, description)
 - [ ] 4 project case studies (title, description, tags, live URL, code URL)
 - [ ] 2 client testimonials (quote, name, role)
@@ -79,9 +79,9 @@ In `tailwind.config.js`, the `accent` color is `#ff5722` (orange). Common altern
 
 ### Change fonts
 In `index.html`, swap the Google Fonts link. The site uses three fonts:
-- **Fraunces** (display, characterful serif) — try Tobias, Editorial New, PP Editorial
-- **Geist** (body, modern sans) — try Inter, Space Grotesk, Satoshi
-- **JetBrains Mono** (mono, for labels) — try IBM Plex Mono, Fira Code
+- **Fraunces** (display, characterful serif): try Tobias, Editorial New, PP Editorial
+- **Geist** (body, modern sans): try Inter, Space Grotesk, Satoshi
+- **JetBrains Mono** (mono, for labels): try IBM Plex Mono, Fira Code
 
 Then update `fontFamily` in `tailwind.config.js`.
 
@@ -98,29 +98,29 @@ Everything below is what powers this site. Bookmark these.
 
 ### Framer Motion (the workhorse)
 The animations in `src/components/Motion.jsx` use:
-- `motion.div` with `initial`, `whileInView`, `transition` — fade-up reveals
-- `staggerChildren` in variants — sequenced reveals (used in Services, Stats)
-- `useScroll` + `useTransform` — parallax in Hero, navbar shrink
-- `whileHover` — interactive scale/rotate (Project cards, Service icons)
+- `motion.div` with `initial`, `whileInView`, `transition`: fade-up reveals
+- `staggerChildren` in variants: sequenced reveals (used in Services, Stats)
+- `useScroll` + `useTransform`: parallax in Hero, navbar shrink
+- `whileHover`: interactive scale/rotate (Project cards, Service icons)
 
 **Resources, in priority order:**
-1. **motion.dev/docs** — official docs, very clean
-2. **YouTube: Olivier Larose** — he rebuilds award-winning sites in Framer Motion. *The* channel for this.
-3. **YouTube: Sam Selikoff** — deeper dives into the "why"
-4. **codrops.com** — design ideas with code (filter by "Motion" or "Scroll")
+1. **motion.dev/docs**: official docs, very clean
+2. **YouTube: Olivier Larose**: he rebuilds award-winning sites in Framer Motion. *The* channel for this.
+3. **YouTube: Sam Selikoff**: deeper dives into the "why"
+4. **codrops.com**: design ideas with code (filter by "Motion" or "Scroll")
 
 ### CSS animations (no JS)
 The grain texture, marquee strip, and pulse dot use pure CSS keyframes in
 `tailwind.config.js` and `src/index.css`.
 
 **Resources:**
-- **joshwcomeau.com/animation** — best writer on web animation
-- **animations.dev** — interactive course by Emil Kowalski
+- **joshwcomeau.com/animation**: best writer on web animation
+- **animations.dev**: interactive course by Emil Kowalski
 
 ### Going further (GSAP / 3D)
 When Framer Motion isn't enough (complex scroll timelines, horizontal scroll, pinned sections):
-- **gsap.com/resources** — official GSAP + ScrollTrigger docs (free now)
-- **threejs-journey.com** — Bruno Simon's course if you want to add 3D
+- **gsap.com/resources**: official GSAP + ScrollTrigger docs (free now)
+- **threejs-journey.com**: Bruno Simon's course if you want to add 3D
 
 ---
 

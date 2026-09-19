@@ -11,7 +11,7 @@ export default function About() {
           description={`I'm ${personal.name}, a full-stack developer based in ${personal.location}. I've spent the last few years shipping products end-to-end, design, code, deploy, support and I genuinely enjoy every layer of the stack.`}
         />
 
-        {/* Split-personality block — Adham's signature move */}
+        {/* Split-personality block: Adham's signature move */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-ink/10 rounded-2xl overflow-hidden border border-ink/10 mb-20">
           <FadeUp className="bg-bone p-8 md:p-12">
             <div className="font-mono text-xs uppercase tracking-[0.2em] text-accent mb-4">

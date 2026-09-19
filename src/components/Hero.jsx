@@ -42,7 +42,7 @@ export default function Hero() {
       />
 
       <motion.div style={{ y, opacity }} className="relative max-w-7xl mx-auto w-full">
-        {/* Split-personality headline — Adham concept */}
+        {/* Split-personality headline: Adham concept */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -51,7 +51,7 @@ export default function Hero() {
         >
           <div className="overflow-hidden">
             <motion.div variants={wordVariants}>
-              I&apos;m <span className="italic font-normal">Prachi</span> —
+              I&apos;m <span className="italic font-normal">Prachi</span>,
             </motion.div>
           </div>
           <div className="overflow-hidden">

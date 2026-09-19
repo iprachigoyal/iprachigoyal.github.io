@@ -10,7 +10,7 @@ export default function Work() {
         <SectionHeader
           eyebrow="03 / Selected Work"
           title="Things I've actually shipped."
-          description="A handful of recent projects. Each one is live or open-source — happy to walk you through the code or the decisions behind it."
+          description="A handful of recent projects. Each one is live or open-source. Happy to walk you through the code or the decisions behind it."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">

@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 
-// Fade up reveal — the workhorse animation for sections
+// Fade up reveal: the workhorse animation for sections
 export function FadeUp({ children, delay = 0, className = '', y = 24 }) {
   return (
     <motion.div
@@ -15,7 +15,7 @@ export function FadeUp({ children, delay = 0, className = '', y = 24 }) {
   )
 }
 
-// Stagger container — pair with FadeUpItem children
+// Stagger container: pair with FadeUpItem children
 export function Stagger({ children, className = '', stagger = 0.08 }) {
   return (
     <motion.div
