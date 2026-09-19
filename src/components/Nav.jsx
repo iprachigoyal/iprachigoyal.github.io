@@ -7,6 +7,7 @@ const nav = [
   { label: 'About', href: '#about' },
   { label: 'Work', href: '#work' },
   { label: 'Services', href: '#services' },
+  { label: 'Start a Project', href: '#start' },
   { label: 'Contact', href: '#contact' },
 ]
 
@@ -40,7 +41,7 @@ export default function Nav() {
             </span>
           </span>
         </a>
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-5 lg:gap-8">
           {nav.map((item) => (
             <a
               key={item.href}

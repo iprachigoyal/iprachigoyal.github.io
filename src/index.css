@@ -6,6 +6,12 @@
   html {
     scroll-behavior: smooth;
   }
+  /* The header is fixed, so anchored sections need to stop clear of it
+     instead of landing underneath. */
+  section[id],
+  [id='top'] {
+    scroll-margin-top: 4.5rem;
+  }
   body {
     font-family: 'Geist', system-ui, sans-serif;
     background: #f5f1e8;

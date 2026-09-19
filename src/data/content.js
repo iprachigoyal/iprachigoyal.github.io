@@ -10,7 +10,7 @@ export const personal = {
   email: 'goyalprachi711@gmail.com',
   tagline:
     'Full-stack developer who builds products end to end. I design APIs, data models, and interfaces that stay clear in daily use. Recent work includes property-management platforms, multi-tenant SaaS, and production tools running in the real world.',
-  // The banner you uploaded — already styled as a portfolio header
+  // The banner you uploaded, already styled as a portfolio header
   banner: '/banner.png',
   available: true,
   resumeUrl: '#',
@@ -61,11 +61,46 @@ export const services = [
   },
 ]
 
+// Client inquiry form.
+// Leave `endpoint` empty to open a prefilled email instead of posting anywhere.
+//
+// To collect submissions properly, pick one (both are free, no backend needed):
+//
+//   Formspree: https://formspree.io
+//     endpoint:  'https://formspree.io/f/YOUR_FORM_ID'
+//     accessKey: ''            (not used)
+//     Submissions land in the Formspree dashboard AND your email.
+//
+//   Web3Forms: https://web3forms.com
+//     endpoint:  'https://api.web3forms.com/submit'
+//     accessKey: 'your-access-key-uuid'
+//     Submissions are emailed to you only. No dashboard on the free tier.
+export const inquiryForm = {
+  endpoint: 'https://formspree.io/f/mjykgkkv',
+  accessKey: '',
+  projectTypes: [
+    'Web application',
+    'Marketing website',
+    'API / backend',
+    'AI integration',
+    'Design system',
+    'Something else',
+  ],
+  budgets: [
+    'Under $1,000',
+    '$1,000 to $3,000',
+    '$3,000 to $7,000',
+    '$7,000+',
+    'Not sure yet',
+  ],
+  timelines: ['ASAP', 'Within a month', '1 to 3 months', '3+ months', 'Just exploring'],
+}
+
 export const experience = [
   {
     company: 'Rent Solutions',
     role: 'Full Stack Developer',
-    period: 'Apr 2025 — Present',
+    period: 'Apr 2025 to Present',
     type: 'United States (Remote)',
     link: 'https://app.rentsolutionsemail.com/admin-portal/login',
     description:
@@ -78,7 +113,7 @@ export const experience = [
   {
     company: 'Ultivic Pvt. Ltd',
     role: 'Jr. React Developer',
-    period: 'Feb 2025 — Apr 2025',
+    period: 'Feb 2025 to Apr 2025',
     type: 'Mohali, India',
     description:
       'Developed 20+ reusable and scalable UI components with React and Redux Toolkit, tailored to diverse client requirements. Ensured responsive design and optimized performance across devices and browsers.',
@@ -87,7 +122,7 @@ export const experience = [
   {
     company: 'Freelance',
     role: 'Web Developer',
-    period: '2024 — Present',
+    period: '2024 to Present',
     type: 'Self-Employed',
     description:
       'Building the frontend of websites and web apps using modern technologies. Working directly with clients to design and develop user interfaces that meet their business needs.',
@@ -96,7 +131,7 @@ export const experience = [
   {
     company: 'Quark Software Inc',
     role: 'Research & Development Intern',
-    period: 'Jan 2024 — Jun 2024',
+    period: 'Jan 2024 to Jun 2024',
     type: 'Mohali, India',
     description:
       'Improved software stability by building automated testing frameworks for Quark XML Author and QuarkXPress server extensions, now used by 10+ developers. Wrote 10+ scripts for InDesign and InDesign Server to optimize workflows.',
@@ -105,7 +140,7 @@ export const experience = [
   {
     company: 'Nephics',
     role: 'Software Developer Intern',
-    period: 'Jan 2022 — Apr 2022',
+    period: 'Jan 2022 to Apr 2022',
     type: 'Mohali, India',
     description:
       'Drove the full development lifecycle of automated tools in Python and C++, identifying critical bottlenecks and resolving three major performance issues to improve execution speed during deployment.',
@@ -115,7 +150,7 @@ export const experience = [
 
 export const projects = [
   {
-    title: 'Rent Solutions — Edge Platform',
+    title: 'Rent Solutions: Edge Platform',
     blurb:
       'Property-management platform where owners and agents list and lease properties and tenants apply and book, covering virtual showings, rental applications, and the full journey from onboarding through move-in and move-out. CASL-based RBAC across all modules, AppFolio API sync for real-time property/tenant/owner data.',
     tags: ['React', 'TypeScript', 'CASL / RBAC', 'AppFolio', 'SendGrid', 'Gmail API'],
@@ -137,7 +172,7 @@ export const projects = [
   {
     title: 'Talksy',
     blurb:
-      'A real-time chat app for web and mobile. One-on-one and group conversations update instantly over Socket.IO, with the touches that make messaging feel alive — delivery receipts, online presence, reactions, replies, media sharing, and editing or deleting what you have sent. I built it to learn how a messaging stack fits together, sharing TypeScript contracts across an Express backend, a React web client, and a React Native (Expo) app.',
+      'A real-time chat app for web and mobile. One-on-one and group conversations update instantly over Socket.IO, with the touches that make messaging feel alive: delivery receipts, online presence, reactions, replies, media sharing, and editing or deleting what you have sent. I built it to learn how a messaging stack fits together, sharing TypeScript contracts across an Express backend, a React web client, and a React Native (Expo) app.',
     tags: ['React', 'Socket.IO', 'TypeScript', 'Prisma', 'PostgreSQL', 'TanStack Query'],
     image: '/project-talksy-placeholder.jpg',
     live: 'https://talksy-web-eight.vercel.app/',
@@ -156,7 +191,7 @@ export const testimonials = [
   },
   {
     quote:
-      'Working with Prachi felt like having a senior dev on the team — without the senior dev overhead. Genuinely cares about the product.',
+      'Working with Prachi felt like having a senior dev on the team, without the senior dev overhead. Genuinely cares about the product.',
     name: 'Another Client',
     role: 'CTO, Startup',
     avatar: '/testimonial-2-placeholder.jpg',
@@ -165,7 +200,7 @@ export const testimonials = [
 
 export const brands = ['React', 'Next.js', 'Node.js', 'Prisma', 'PostgreSQL', 'TypeScript']
 
-// Personality bits — Adham-style fun facts
+// Personality bits: Adham-style fun facts
 export const randomFacts = [
   'I shipped a SaaS that runs local petrol pumps in Punjab every day',
   'Chai > coffee, and I will die on this hill',
