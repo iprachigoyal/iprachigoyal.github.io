@@ -170,6 +170,16 @@ export const projects = [
     featured: true,
   },
   {
+    title: 'The Social Echo Box',
+    blurb:
+      'Website for an Instagram studio in Tricity that manages accounts, edits reels and designs feeds for local brands. The site walks a prospective client through their reels, live grid designs, services, a month-by-month process and testimonials, and ends on booking a free discovery call, with email, Instagram and WhatsApp one tap away.',
+    tags: ['React', 'Vite', 'Framer Motion'],
+    image: '/project-socialechobox-placeholder.jpg',
+    live: 'https://socialechobox.com',
+    year: '2026',
+    featured: true,
+  },
+  {
     title: 'Talksy',
     blurb:
       'A real-time chat app for web and mobile. One-on-one and group conversations update instantly over Socket.IO, with the touches that make messaging feel alive: delivery receipts, online presence, reactions, replies, media sharing, and editing or deleting what you have sent. I built it to learn how a messaging stack fits together, sharing TypeScript contracts across an Express backend, a React web client, and a React Native (Expo) app.',
